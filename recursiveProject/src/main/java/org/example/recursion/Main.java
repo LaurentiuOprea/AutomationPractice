@@ -5,6 +5,7 @@ public class Main {
 
     public static int sum(int k) {
         if (k > 0) {
+            System.out.println("number: " + k);
             return k + sum(k - 1);
         } else {
             return 0;

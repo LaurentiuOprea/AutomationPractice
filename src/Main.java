@@ -1,21 +1,19 @@
+import pckg1.Public;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-
-
-    public static void main(String[] args) {
-
-        int[] numbers = {10,20,30,40,50};
-
-        for (int number : numbers){
-            System.out.println("Test" + number);
-
-        }
-
-
-
-
+    public static int sum(int k) {
+        if (k > 0) {
+            return k + sum(k - 1);
+        } else {
+            return 0;
         }
     }
+
+    public static void main(String[] args) {
+        int result = sum(10);
+        System.out.println(result);
+
+
+    }
+}
